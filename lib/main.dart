@@ -74,8 +74,8 @@ class _MyAppState extends State<MyApp> {
           children: [
             InAppWebView(
               key: webViewKey,
-              initialUrlRequest: URLRequest(
-                  url: Uri.parse("https://absen.esktraweb.my.id")),
+              initialUrlRequest:
+                  URLRequest(url: Uri.parse("https://absen.esktraweb.my.id")),
               initialOptions: options,
               pullToRefreshController: pullToRefreshController,
               onWebViewCreated: (controller) {
@@ -152,29 +152,29 @@ class _MyAppState extends State<MyApp> {
           ],
         ),
       ),
-      ButtonBar(
-        alignment: MainAxisAlignment.center,
-        children: <Widget>[
-          ElevatedButton(
-            child: Icon(Icons.arrow_back),
-            onPressed: () {
-              webViewController?.goBack();
-            },
-          ),
-          ElevatedButton(
-            child: Icon(Icons.arrow_forward),
-            onPressed: () {
-              webViewController?.goForward();
-            },
-          ),
-          ElevatedButton(
-            child: Icon(Icons.refresh),
-            onPressed: () {
-              webViewController?.reload();
-            },
-          ),
-        ],
-      ),
+      // ButtonBar(
+      //   alignment: MainAxisAlignment.center,
+      //   children: <Widget>[
+      //     ElevatedButton(
+      //       child: Icon(Icons.arrow_back),
+      //       onPressed: () {
+      //         webViewController?.goBack();
+      //       },
+      //     ),
+      //     ElevatedButton(
+      //       child: Icon(Icons.arrow_forward),
+      //       onPressed: () {
+      //         webViewController?.goForward();
+      //       },
+      //     ),
+      //     ElevatedButton(
+      //       child: Icon(Icons.refresh),
+      //       onPressed: () {
+      //         webViewController?.reload();
+      //       },
+      //     ),
+      //   ],
+      // ),
     ])));
   }
 }
